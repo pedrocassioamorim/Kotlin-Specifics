@@ -3,7 +3,7 @@ package com.example.hellokotlin
 fun main(){
 
     val name = "Pedro"   // THIS TYPE CANNOT BE CHANGED (CONSTANT VALUE)
-    var age = "29"       // THIS TYPE CAN BE CHANGED
+    var age = 29       // THIS TYPE CAN BE CHANGED
     var city : String    // CREATING VARIABLE WITHOUT VALUE YET
 
 
@@ -58,7 +58,6 @@ fun main(){
     println()
 
     // Booleans:
-
     println("Booleans: ")
     val verdade : Boolean = true
     val mentira : Boolean = false
@@ -77,7 +76,52 @@ fun main(){
     println("Characters:")
     val myGrad : Char = 'B'
     println("Char: " + myGrad)
+    println()
 
+    myFirstFunction()
+    myFirstFunction()
 
+    mySecondFunction(name, age, myGrad)
+
+    println()
+    println()
+
+    var result = addTwoNumbers(5555,8000)
+    println("Result : " + result)
+
+    println()
+    println("Adding and printing three numbers in one line of code: ")
+    println("Here they are: " + (addThreeNumbers(10,15,25)))
+    println()
+    println()
+
+    // Create a c1 object of the Car Class
+    var c1 = Car()
+
+    // Access attributes/properties from the object
+    println("Brand: " + c1.brand)
+    println("Year: " + c1.year)
+    c1.color = "New Black"
+    println("Color: " + c1.color)
+
+    // Access the function/methods of the object
+    c1.drive()
+    c1.brake()
 
 }
+
+fun myFirstFunction(){
+    println("This is just the Beginning, Baby!")
+}
+
+fun mySecondFunction(name : String, age : Int, char : Char){
+    println("Hello " + name)
+    println("Your age is " + age)
+    println("Your character is " + char)
+}
+
+fun addTwoNumbers (x : Int, y : Int) : Int {
+    return x + y
+}
+
+fun addThreeNumbers(x : Int, y : Int, z : Int) = (x + y + z)
