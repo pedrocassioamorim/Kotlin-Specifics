@@ -96,7 +96,7 @@ fun main(){
     println()
 
     // Create a c1 object of the Car Class
-    var c1 = Car()
+    var c1 = Car("Ferrari", 1950, "Green")
 
     // Access attributes/properties from the object
     println("Brand: " + c1.brand)
@@ -104,9 +104,28 @@ fun main(){
     c1.color = "New Black"
     println("Color: " + c1.color)
 
+    // Instância na memória do objeto criado
+    println(c1)
+
     // Access the function/methods of the object
     c1.drive()
     c1.brake()
+
+    // CREATING BETTER OBJECTS:
+    var teacher01 = Teacher("Luis Henrique", 30)
+    teacher01.walk()
+    teacher01.talk()
+    teacher01.eat()
+
+    var player01 = Player("Jorge Vinicius", 22)
+    player01.talk()
+    player01.walk()
+    player01.eat()
+
+    var business01 = BusinessMan("Pedro Cássio", 30)
+    business01.talk()
+    business01.walk()
+    business01.eat()
 
 }
 

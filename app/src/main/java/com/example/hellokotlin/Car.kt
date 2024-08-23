@@ -1,12 +1,19 @@
 package com.example.hellokotlin
 
-class Car {
+import java.time.Year
+
+class Car(var brand : String,
+          var year: Int,
+          var color : String) {
 
     // ATTRIBUTES => PROPERTY
     // VARIABLES THAT BELONG TO THE CLASS
-    var brand = "Ford"
-    var year = 2023
-    var color = "Red"
+
+
+
+
+    // CONSTRUCTORS
+
 
 
     // METHODS / FUNCTIONS => BEHAVIOUR
